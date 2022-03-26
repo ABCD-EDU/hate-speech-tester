@@ -1,0 +1,14 @@
+.projectHeading {
+    color: #3C3C3C;
+}
+
+.navbar {
+  width: 100%;
+  padding: 3.5rem;
+  height: 195px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: #f8f8f8;
+}
