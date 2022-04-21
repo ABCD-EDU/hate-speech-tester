@@ -1,0 +1,67 @@
+.classLabel {
+    font-size: small;
+    font-family: monospace;
+    font-weight: bold;
+    color: #575757;
+}
+
+.classScoreContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.gradient {
+    background: rgb(33,162,150);
+    background: linear-gradient(90deg, rgba(33,162,150,1) 0%, rgba(9,90,121,1) 19%, rgba(9,90,121,0.9752101524203431) 38%, rgba(142,255,0,0.3617647742690826) 93%); 
+    border-radius: 5px;
+}
+
+.results {
+    margin-top: 1rem;
+}
+
+.results > pre > code {
+    background-color: #f1f1f1;
+    display: block;
+    padding: 1rem 2rem;
+
+    -webkit-user-select: all;  /* Chrome 49+ */
+    -moz-user-select: all;     /* Firefox 43+ */
+    -ms-user-select: all;      /* No support yet */
+    user-select: all;          /* Likely future */   
+  }
+
+.results > pre {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.codeLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.codeLabel > button {
+    border: 1px solid #f1f1f1;
+    width: 20%;
+    padding: 0.35rem 0.7rem;
+    margin: 0.2rem 0;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    
+}
+
+.codeLabel > button:hover {
+    cursor: pointer;
+}
+
+.codeLabel > button:active {
+    background-color: #e2e2e2;
+}
+
+.divider {
+    border-top: 1px solid #B1B1B1;
+    margin: 1.25rem 0;
+}

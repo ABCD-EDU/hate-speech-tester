@@ -1,16 +1,18 @@
+import { FC } from "react";
 import styles from "../Text.module.css";
+import { CitationBody } from "../../../pages/model/[modelId]";
 
-const Citation = () => {
+const Citation:FC<CitationBody> = ({authors, title, journal, year}: CitationBody) => {
   return (
     <div>
       <h1>Citation</h1>
       <p>For more information visit this <a href="/" target="_blank">link</a> to read our paper.</p>
       <code>
         {`@article{,
-        title={},
-        author={Andres, Austin. Arevalo, Lance Gabrielle. Bayquen, Christian Gabriel. Capistrano, Bryan, Cayton, Arian Carl. Fernandez, Jaime,  Salenga, Neil Fernan M. },
-        journal={},
-        year={2022}
+        title={${title}},
+        author={${authors.join(", ")}},
+        journal={${journal}},
+        year={${year}}
         }`}
       </code>
     </div>

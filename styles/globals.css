@@ -25,3 +25,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
+* > * > * > a {
+  color: #222222;
+}
+
+* > * > span,
+* > * > h1,
+* > * > h3,
+* > * > h5 {
+  color: #575757;
+}

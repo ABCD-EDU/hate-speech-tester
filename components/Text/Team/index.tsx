@@ -1,14 +1,14 @@
-import styles from "../Text.module.css";
+import styles from "./Text.module.css";
 
-const Team = () => {
+const Team = ({ team }: { team: string[] }) => {
   return (
     <div>
       <h1>Team</h1>
-      <p>
-        Andres, Austin. Arevalo, Lance Gabrielle. Bayquen, Christian Gabriel.
-        Capistrano, Bryan, Cayton, Arian Carl. Fernandez, Jaime, Salenga, Neil
-        Fernan M.
-      </p>
+      <div className={styles.memberContainer}>
+        {team.map((member) => (
+          <span key={member} className={styles.member}>{member}</span>
+        ))}
+      </div>
     </div>
   );
 };

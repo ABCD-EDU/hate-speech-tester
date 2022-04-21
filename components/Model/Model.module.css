@@ -24,10 +24,46 @@
     border-radius: 10px;
 }
 
+.inputError {
+    border: 1px solid #fd7070;
+    width: 93%;
+    height: 45px;
+    padding: 1rem;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+    color: #fd7070;
+}
+
 .container {
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.selectContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.task {
+    display: flex;
+    flex-direction: row;
+    margin: 0.35rem;
+    color: #575757;
+}
+
+.task > * {
+    margin: 0 0.5rem;
+}
+
+.selectAllContainer {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.selectAllContainer > h5 {
+    margin-left: 1rem;
 }

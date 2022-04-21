@@ -1,15 +1,26 @@
+import Link from "next/link";
+import { FC } from "react";
 import styles from "./NavBar.module.css";
 
-const NavBar = () => {
+interface NavBarProps {
+  title: string;
+  description: string;
+}
+
+const NavBar:FC<NavBarProps> = ({title, description}: NavBarProps) => {
   return (
     <div className={styles.navbar}>
       <div className={styles.projectHeading}>
         <div>
-          <h1>Project Title</h1>
-          <p>Project Description</p>
+          <h1>{title}</h1>
+          <p>{description}</p>
         </div>
       </div>
-      <p>ABCD</p>
+      <Link href="/">
+        <a>
+          ABCD
+        </a>
+      </Link>
     </div>
   );
 };

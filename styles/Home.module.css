@@ -1,6 +1,5 @@
 .container {
   width: 90%;
-  height: 100vh;
   display: flex;
   margin: 0 auto;
 }
@@ -15,8 +14,8 @@
     padding-right: 5rem;
 }
 
-.textContainer {
-    border-right: 1px solid #B1B1B1;
+.modelContainer {
+    border-left: 1px solid #B1B1B1;
 }
 
 .textContainer > div,
@@ -45,4 +44,31 @@
 .textContainer > * > h1,
 .modelContainer > * > h3 {
     color: #575757;
+}
+
+.wrapper {
+    width: fit-content;
+    display: flex;
+    margin: 1rem auto;
+    margin-top: 5rem;
+}
+
+.homeHeading {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-family: monospace;
+    font-size: 2rem;
+}
+
+.links {
+    display: flex;
+    margin: 3rem auto;
+    width: fit-content;
+    font-family: monospace;
+    font-size: large;
+    text-decoration: underline;
+}
+
+.links:hover {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
 }
